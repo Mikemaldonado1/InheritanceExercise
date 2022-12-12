@@ -6,34 +6,34 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
+            
+            Bird bird1 = new Bird();
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
+            bird1.Small = "Yes";
+            bird1.Sing = "Yes";
+            bird1.Carnivorous = "No";
+            bird1.Pet = "Yes";
 
-
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
+            Console.WriteLine($"{bird1.Small}, this bird is small.");
+            Console.WriteLine($"{bird1.Sing} it sings!");
+            Console.WriteLine($"{bird1.Carnivorous}, this bird is NOT carnivorous.");
+            Console.WriteLine($"{bird1.Pet}, you can have it as a pet.");
+            Console.WriteLine();
 
 
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
+            Reptile reptile1 = new Reptile();
 
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
+            reptile1.BreatheOxygen = "Yes";
+            reptile1.SharpTeeth = "No";
+            reptile1.Poisonous = "Yes";
+            reptile1.EatBugs = "Yes";
+
+            Console.WriteLine($"{reptile1.BreatheOxygen}, it breathes O2.");
+            Console.WriteLine($"{reptile1.SharpTeeth}, it dosn't have sharp teeth!");
+            Console.WriteLine($"{reptile1.Poisonous}, it's poisonous!");
+            Console.WriteLine($"{reptile1.EatBugs}, it loves bugs.");
+
+
         }
     }
 }
